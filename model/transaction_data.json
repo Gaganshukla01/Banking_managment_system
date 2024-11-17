@@ -1,0 +1,48 @@
+{
+    "2400": [
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-16 20:53:09",
+            "Transaction_amount": 500,
+            "Updated_amount": 9300
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-16 20:53:25",
+            "Transaction_amount": 600,
+            "Updated_amount": 9900
+        },
+        {
+            "Mode": "debit",
+            "Date_and_time": "2024-11-16 20:53:44",
+            "Transaction_amount": 400,
+            "Updated_amount": 9500
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-16 21:05:07",
+            "Transaction_amount": 400,
+            "Updated_amount": 9900
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-17 13:02:20",
+            "Transaction_amount": 1000,
+            "Updated_amount": 8000
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-17 13:03:56",
+            "Transaction_amount": 500,
+            "Updated_amount": 7500
+        }
+    ],
+    "2401": [
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-17 13:03:56",
+            "Transaction_amount": 500,
+            "Updated_amount": 1500
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "2400": {
+        "Name": "gagan",
+        "Email": "a@yash.com",
+        "Age": "21",
+        "Address": "1234",
+        "Phone_Number": "1234567890",
+        "Password": "xsw2XSW@",
+        "Balance": 7500
+    },
+    "2401": {
+        "Name": "ronak",
+        "Email": "ronak@yash.com",
+        "Age": "30",
+        "Address": "vijay nagar",
+        "Phone_Number": "2134234312",
+        "Password": "21343",
+        "Balance": 500
+    }
+}
