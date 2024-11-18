@@ -1,3 +1,4 @@
+from constant.constant import(DEBIT_AMOUNT,CREDIT_AMOUNT,SHOW_BALANCE,TRANSFER_MONEY)
 from view.bank_services import(credit_amount,debit_amount,show_balance,transfer_money)
 
 def account_operation(user_account_number):
@@ -27,6 +28,7 @@ def account_operation(user_account_number):
     """
 
     while True:
+
         print("-------------------------------------------------------||")
         print("Press 1 for debit from account: ")
         print("-------------------------------------------------------||")
@@ -38,14 +40,16 @@ def account_operation(user_account_number):
         print("-------------------------------------------------------||")
         print("Press any key for exit with bank account: ")
         print("-------------------------------------------------------||")
-        user_choice=input("Enter your choice: ")
-        if user_choice=="1":
+
+        user_choice=int(input("Enter your choice: "))
+        
+        if user_choice==DEBIT_AMOUNT:
             debit_amount(user_account_number)
-        elif user_choice=="2":
+        elif user_choice==CREDIT_AMOUNT:
             credit_amount(user_account_number)
-        elif user_choice=="3":
+        elif user_choice==SHOW_BALANCE:
             show_balance(user_account_number)
-        elif user_choice=="4":
+        elif user_choice==TRANSFER_MONEY:
             transfer_money(user_account_number)
         else:
             break

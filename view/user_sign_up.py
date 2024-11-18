@@ -50,8 +50,8 @@ def signup_bank_account():
         user_phone_number = get_valid_input("Enter your phone number: ", phone_valid)
         
         while True:
-            user_password = input("Enter Your Password: ")
-            user_confirm_password = input("Enter Your Confirm Password: ")
+            user_password = input("Enter password: ")
+            user_confirm_password = input("Confirm password: ")
             if user_password == user_confirm_password:
                 break
             else:
@@ -61,7 +61,7 @@ def signup_bank_account():
         user_data = UserData("./model/data.json")
         user_account_number = user_account_number_genrate()
         user_account_balance=0
-        print(f"Account Created Successfully with Account number {user_account_number}")
+        print(f"Account created successfully with account number {user_account_number}")
         user_data.insert(user_name, user_age, user_address, user_email, user_phone_number, 
                          user_password, user_account_number,user_account_balance)
 

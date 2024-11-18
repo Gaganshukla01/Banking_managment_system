@@ -37,11 +37,13 @@ class UserData:
         self.json_file = file_name
         self.data = {}
         try:
+
             if os.path.exists(file_name):
                 with open(self.json_file, "r") as json_output:
                     self.data = json.load(json_output)
             else:
                 self.data = {}
+
         except FileNotFoundError:
             print(f"Error: The file {file_name} was not found.")
         except json.JSONDecodeError:
@@ -53,6 +55,7 @@ class UserData:
                user_password, user_account_number ,user_account_balance): 
         
         try:
+
             # Create a new dictionary for the account number if it doesn't exist
             if user_account_number not in self.data:
                 self.data[user_account_number] = {}
@@ -74,6 +77,7 @@ class UserData:
     def display(self):
         
         try:
+
             if os.path.exists(self.json_file):
                 with open(self.json_file, "r") as json_output:
                     data = json.load(json_output)
@@ -81,6 +85,7 @@ class UserData:
             else:
                 print(f"{self.json_file} is not created yet")
                 return None
+
         except FileNotFoundError:
             print(f"Error: The file {self.json_file} was not found.")
         except json.JSONDecodeError:
@@ -92,6 +97,7 @@ class UserData:
     def update_balance(self, user_account_number, new_balance):
         
         try:
+
             if user_account_number in self.data:
                 self.data[user_account_number]['Balance'] = new_balance
                 with open(self.json_file, "w") as json_output:
@@ -99,6 +105,7 @@ class UserData:
                 print(f"Balance updated successfully for account number {user_account_number}.")
             else:
                 print(f"Account number {user_account_number} does not exist.")
+                
         except IOError:
             print(f"Error: Unable to write to the file {self.json_file}.")
         except Exception as e:

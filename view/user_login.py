@@ -38,7 +38,6 @@ def login_bank_account():
             user_data = UserData("./model/data.json")
             data = user_data.display()
             user_account_keys = list(data.keys())
-            
             if (user_account_number in user_account_keys and 
                 data[user_account_number]["Password"] == user_password):
                 print(f"Welcome {data[user_account_number]["Name"]}")

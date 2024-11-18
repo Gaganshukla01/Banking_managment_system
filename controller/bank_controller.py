@@ -2,6 +2,7 @@ from view.user_login import  login_bank_account
 from view.user_sign_up import signup_bank_account
 from constant.constant import(SIGNUP_ACCOUNT,LOGIN_ACCOUNT)
 
+
 def bank_controller():
 
     """
@@ -25,6 +26,7 @@ def bank_controller():
     """
 
     while True:
+
         print(" WELCOME TO BANK MANAGMENT SYSTEM ")
         print("-------------------------------------------------------||")
         print("Press 1 for signup with bank account: ")
@@ -33,10 +35,11 @@ def bank_controller():
         print("-------------------------------------------------------||")
         print("Press any key for exit with bank account: ")
         print("-------------------------------------------------------||")
-        user_choice=input("Enter your choice:. ")
-        if user_choice=="1":
+
+        user_choice=int(input("Enter your choice:. "))
+        if user_choice==SIGNUP_ACCOUNT:
             signup_bank_account()
-        elif user_choice=="2":
+        elif user_choice==LOGIN_ACCOUNT:
             login_bank_account()
         else:
             print("Thanks for using bank system........")

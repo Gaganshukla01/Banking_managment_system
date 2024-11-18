@@ -3,7 +3,6 @@ from model.transaction import TransactionData
 user_data = UserData("./model/data.json")
 transaction_data=TransactionData("./model/transaction_data.json")
 
-
 def show_balance(user_account_number):
 
     """
@@ -76,6 +75,7 @@ def debit_amount(user_account_number):
     """
 
     try:
+
         user_amount_input = int(input("Enter amount you want to debit: "))
         if user_amount_input < 0:
             print("You cannot debit a negative amount.")
@@ -116,7 +116,8 @@ def transfer_money(user_account_number):
         print("Insufficent balance in your account")
         return
     if transfer_account_number in account_number:
-        user_data.update_balance(transfer_account_number,amount)
+        updated_balance=int(data[transfer_account_number]['Balance'])+amount
+        user_data.update_balance(transfer_account_number,updated_balance)
         print(f"Amount transfer sucessfully to {transfer_account_number} ")
         updated_amount=data[user_account_number]["Balance"]-amount
         user_data.update_balance(user_account_number,updated_amount)

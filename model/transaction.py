@@ -5,14 +5,16 @@ from datetime import datetime
 class TransactionData:
 
     def __init__(self, file_name):
+
         """
         Initializes the TransactionData object and loads data from the specified JSON file.
-
         Parameters:
             file_name (str): The name of the JSON file to load transaction data from.
         """
+
         self.json_file = file_name
         self.data = {}
+
         try:
             if os.path.exists(file_name):
                 with open(self.json_file, "r") as json_output:
@@ -52,7 +54,7 @@ class TransactionData:
             print(f"An unexpected error occurred while inserting data: {e}")
         
     def show_account(self):
+
         with open(self.json_file,"r") as file:
             data=json.load(file)
         print(data)
-
