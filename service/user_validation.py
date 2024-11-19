@@ -13,10 +13,8 @@ def age_valid(user_age):
 
     if not user_age:
         return False, "Age should not be empty"
-
     if not user_age.isnumeric():
         return False, "Age must be a number"
-    
     age = int(user_age)  
     if age < 19 or age > 100:  
         return False, "Age must be between 19 and 100"
@@ -35,10 +33,8 @@ def email_valid(user_email):
 
     if not user_email:
         return False, "Email cannot be empty"
-
     if not user_email.endswith("@yash.com"):
         return False, "Email must end with @yash.com"
-
     if '@' not in user_email or user_email.index('@') == 0:
         return False, "Email must contain a valid username before the '@' symbol"
 
@@ -58,7 +54,6 @@ def password_valid(user_password):
 
     valid=False
     special_char="!@#$%^&*()_-+="
-
     if len(user_password) < 8:
         return False ,"Length of password must be greater than 8"
     elif any(char.isupper() for char in user_password) and any(char.islower() for char in user_password) and any(char.isdigit() for char in user_password) and any (char in special_char for char in user_password):

@@ -28,7 +28,8 @@ class TransactionData:
         except Exception as e:
             print(f"An unexpected error occurred while loading the file: {e}")
 
-    def save_transaction(self, user_account_number, mode, user_amount_input, updated_amount):
+    def save_transaction(self, user_account_number, mode, user_amount_input, updated_amount,
+                                                                        bool,account_details):
 
         try:
             # Create a new dictionary for the account number if it doesn't exist
@@ -37,12 +38,23 @@ class TransactionData:
             # Get the current date and time as a string
             date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             # Create a new transaction record
-            transaction_record = {
-                'Mode': mode,
-                'Date_and_time': date_time,
-                'Transaction_amount': user_amount_input,
-                'Updated_amount': updated_amount
-            }
+            if bool:
+                transaction_record = {
+                    'Mode': mode,
+                    'Date_and_time': date_time,
+                    'Transaction_amount': user_amount_input,
+                    'Updated_amount': updated_amount,
+                    'Reciver_Account':account_details
+                }
+            else:
+                  transaction_record = {
+                    'Mode': mode,
+                    'Date_and_time': date_time,
+                    'Transaction_amount': user_amount_input,
+                    'Updated_amount': updated_amount,
+                    'Sender_Details':account_details
+                }
+
             # Append the new transaction record to the list for the account
             self.data[user_account_number].append(transaction_record)
             # Write the updated data back to the JSON file

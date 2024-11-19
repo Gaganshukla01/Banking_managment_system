@@ -53,6 +53,13 @@
             "Date_and_time": "2024-11-18 13:56:56",
             "Transaction_amount": 1000,
             "Updated_amount": 1200
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-18 15:02:26",
+            "Transaction_amount": 500,
+            "Updated_amount": 500,
+            "Reciver_Account": "2401"
         }
     ],
     "2401": [
@@ -67,6 +74,13 @@
             "Date_and_time": "2024-11-18 10:47:39",
             "Transaction_amount": 1000,
             "Updated_amount": 1500
+        },
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-18 15:02:26",
+            "Transaction_amount": 500,
+            "Updated_amount": 2000,
+            "Sender_Details": "2400"
         }
     ],
     "2402": [

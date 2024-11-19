@@ -5,39 +5,20 @@ class UserData:
 
     """
     A class to manage user data for a banking system, stored in a JSON file.
-
     This class provides methods to insert user data, display existing user data, 
     and update the account balance for a user. It handles reading from and writing 
     to a specified JSON file, ensuring that the data is persisted across sessions.
-
-    Attributes:
-        json_file (str): The name of the JSON file where user data is stored.
-        data (dict): A dictionary to hold user data loaded from the JSON file.
-
-    Methods:
-        __init__(file_name): Initializes the UserData object and loads data from the specified JSON file.
-        insert(user_name, user_age, user_address, user_email, user_phone_number, 
-               user_password, user_account_number, user_account_balance): 
-            Inserts a new user's data into the JSON file.
-        display(): 
-            Returns the user data from the JSON file.
-        update_balance(user_account_number, new_balance): 
-            Updates the balance for a specified user account number.
     """
 
     def __init__(self, file_name):
 
         """
         Initializes the UserData object and loads data from the specified JSON file.
-
-        Parameters:
-            file_name (str): The name of the JSON file to load user data from.
         """
 
         self.json_file = file_name
         self.data = {}
         try:
-
             if os.path.exists(file_name):
                 with open(self.json_file, "r") as json_output:
                     self.data = json.load(json_output)
@@ -55,7 +36,6 @@ class UserData:
                user_password, user_account_number ,user_account_balance): 
         
         try:
-
             # Create a new dictionary for the account number if it doesn't exist
             if user_account_number not in self.data:
                 self.data[user_account_number] = {}
@@ -77,7 +57,6 @@ class UserData:
     def display(self):
         
         try:
-
             if os.path.exists(self.json_file):
                 with open(self.json_file, "r") as json_output:
                     data = json.load(json_output)
@@ -97,7 +76,6 @@ class UserData:
     def update_balance(self, user_account_number, new_balance):
         
         try:
-
             if user_account_number in self.data:
                 self.data[user_account_number]['Balance'] = new_balance
                 with open(self.json_file, "w") as json_output:

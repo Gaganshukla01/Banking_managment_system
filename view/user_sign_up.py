@@ -19,27 +19,10 @@ def get_valid_input(prompt, validation_func):
 def signup_bank_account():
     
     """
-    Handles the signup process for creating a new bank account.
-
     This function collects user information such as name, age, address, email, phone number, 
     and password. It validates the inputs using predefined validation functions. If all inputs 
     are valid, it generates a new account number, initializes the account balance, and saves 
     the user data to a JSON file.
-
-    The function performs the following steps:
-    1. Prompts the user for their name, age, address, email, and phone number, validating each input.
-    2. Asks the user to enter and confirm their password, ensuring both entries match.
-    3. Generates a unique account number for the new user.
-    4. Initializes the account balance to zero.
-    5. Saves the user data to a JSON file using the `User Data` class.
-
-    Returns:
-        None: This function does not return a value; it prints messages indicating the success 
-              or failure of the signup process.
-
-    Raises:
-        Exception: For any unexpected errors that may occur during execution, such as issues 
-                   with file handling or data insertion.
     """
     
     try:
