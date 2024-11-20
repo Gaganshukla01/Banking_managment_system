@@ -145,6 +145,59 @@
             "Date_and_time": "2024-11-18 14:07:23",
             "Transaction_amount": 400,
             "Updated_amount": 5000
+        },
+        {
+            "Mode": "debit",
+            "Date_and_time": "2024-11-20 15:11:16",
+            "Transaction_amount": 1000,
+            "Updated_amount": 2000,
+            "Reciver_Account": 0
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-20 15:18:06",
+            "Transaction_amount": 500,
+            "Updated_amount": 7500,
+            "Reciver_Account": "NA"
+        }
+    ],
+    "2407": [
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-20 15:49:36",
+            "Transaction_amount": 6000,
+            "Updated_amount": 6000,
+            "Reciver_Account": "NA"
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-20 15:50:35",
+            "Transaction_amount": 5000,
+            "Updated_amount": 5000,
+            "Reciver_Account": "NA"
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-20 15:54:49",
+            "Transaction_amount": 1000,
+            "Updated_amount": 4000,
+            "Reciver_Account": "2406"
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-20 15:57:17",
+            "Transaction_amount": 1000,
+            "Updated_amount": 3000,
+            "Reciver_Account": "2406"
+        }
+    ],
+    "2406": [
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-20 15:57:17",
+            "Transaction_amount": 1000,
+            "Updated_amount": 2000,
+            "Sender_Details": "2407"
         }
     ]
 }

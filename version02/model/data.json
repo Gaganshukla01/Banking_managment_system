@@ -33,7 +33,7 @@
         "Address": "asdfg",
         "Phone_Number": "8349061831",
         "Password": "cde3CDE#",
-        "Balance": 5000
+        "Balance": 7500
     },
     "2404": {
         "Name": "sanket",
@@ -43,5 +43,32 @@
         "Phone_Number": "9039118901",
         "Password": "cde3CDE#",
         "Balance": 0
+    },
+    "2405": {
+        "Name": "kishan",
+        "Email": "k@yash.com",
+        "Age": "65",
+        "Address": "fghj",
+        "Phone_Number": "9039118901",
+        "Password": "cde3CDE#",
+        "Balance": 0
+    },
+    "2406": {
+        "Name": "trump",
+        "Email": "t@yash.com",
+        "Age": "54",
+        "Address": "f",
+        "Phone_Number": "1234567890",
+        "Password": "cde3CDE#",
+        "Balance": 2000
+    },
+    "2407": {
+        "Name": "ram",
+        "Email": "r@yash.com",
+        "Age": "54",
+        "Address": "sdfghj",
+        "Phone_Number": "9039118901",
+        "Password": "cde3CDE#",
+        "Balance": 3000
     }
 }
