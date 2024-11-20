@@ -1,0 +1,47 @@
+{
+    "2400": {
+        "Name": "gagan",
+        "Email": "a@yash.com",
+        "Age": "21",
+        "Address": "1234",
+        "Phone_Number": "1234567890",
+        "Password": "xsw2XSW@",
+        "Balance": 500
+    },
+    "2401": {
+        "Name": "ronak",
+        "Email": "ronak@yash.com",
+        "Age": "30",
+        "Address": "vijay nagar",
+        "Phone_Number": "2134234312",
+        "Password": "21343",
+        "Balance": 2000
+    },
+    "2402": {
+        "Name": "ritik",
+        "Email": "r@yash.com",
+        "Age": "54",
+        "Address": "sdfg",
+        "Phone_Number": "8349061831",
+        "Password": "cde3CDE#",
+        "Balance": 800
+    },
+    "2403": {
+        "Name": "rahul",
+        "Email": "g@yash.com",
+        "Age": "23",
+        "Address": "asdfg",
+        "Phone_Number": "8349061831",
+        "Password": "cde3CDE#",
+        "Balance": 5000
+    },
+    "2404": {
+        "Name": "sanket",
+        "Email": "s@yash.com",
+        "Age": "43",
+        "Address": "sdf",
+        "Phone_Number": "9039118901",
+        "Password": "cde3CDE#",
+        "Balance": 0
+    }
+}

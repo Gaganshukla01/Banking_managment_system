@@ -1,0 +1,150 @@
+{
+    "2400": [
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-16 20:53:09",
+            "Transaction_amount": 500,
+            "Updated_amount": 9300
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-16 20:53:25",
+            "Transaction_amount": 600,
+            "Updated_amount": 9900
+        },
+        {
+            "Mode": "debit",
+            "Date_and_time": "2024-11-16 20:53:44",
+            "Transaction_amount": 400,
+            "Updated_amount": 9500
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-16 21:05:07",
+            "Transaction_amount": 400,
+            "Updated_amount": 9900
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-17 13:02:20",
+            "Transaction_amount": 1000,
+            "Updated_amount": 8000
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-17 13:03:56",
+            "Transaction_amount": 500,
+            "Updated_amount": 7500
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-18 10:56:49",
+            "Transaction_amount": 700,
+            "Updated_amount": 6800
+        },
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-18 13:55:29",
+            "Transaction_amount": 200,
+            "Updated_amount": 7000
+        },
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-18 13:56:56",
+            "Transaction_amount": 1000,
+            "Updated_amount": 1200
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-18 15:02:26",
+            "Transaction_amount": 500,
+            "Updated_amount": 500,
+            "Reciver_Account": "2401"
+        }
+    ],
+    "2401": [
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-17 13:03:56",
+            "Transaction_amount": 500,
+            "Updated_amount": 1500
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-18 10:47:39",
+            "Transaction_amount": 1000,
+            "Updated_amount": 1500
+        },
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-18 15:02:26",
+            "Transaction_amount": 500,
+            "Updated_amount": 2000,
+            "Sender_Details": "2400"
+        }
+    ],
+    "2402": [
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-18 11:07:43",
+            "Transaction_amount": 700,
+            "Updated_amount": 700
+        },
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-18 13:56:14",
+            "Transaction_amount": 400,
+            "Updated_amount": 1100
+        },
+        {
+            "Mode": "Recived",
+            "Date_and_time": "2024-11-18 14:07:23",
+            "Transaction_amount": 400,
+            "Updated_amount": 800
+        }
+    ],
+    "2403": [
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-18 13:52:16",
+            "Transaction_amount": 800,
+            "Updated_amount": 800
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-18 13:54:04",
+            "Transaction_amount": 1000,
+            "Updated_amount": 1000
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-18 13:55:29",
+            "Transaction_amount": 200,
+            "Updated_amount": 800
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-18 13:56:14",
+            "Transaction_amount": 400,
+            "Updated_amount": 400
+        },
+        {
+            "Mode": "credit",
+            "Date_and_time": "2024-11-18 13:56:33",
+            "Transaction_amount": 6000,
+            "Updated_amount": 6400
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-18 13:56:56",
+            "Transaction_amount": 1000,
+            "Updated_amount": 5400
+        },
+        {
+            "Mode": "Transfer",
+            "Date_and_time": "2024-11-18 14:07:23",
+            "Transaction_amount": 400,
+            "Updated_amount": 5000
+        }
+    ]
+}
