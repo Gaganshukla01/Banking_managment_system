@@ -11,6 +11,7 @@ class SignupBankAccount:
     def get_valid_input(self,prompt, validation_func):
 
         while True:
+
             user_input = input(prompt)
             is_valid, message = validation_func(user_input)
             if is_valid:
@@ -35,6 +36,7 @@ class SignupBankAccount:
             user_phone_number=self.get_valid_input("Enter your phone number: ", Validation.phone_valid)
         
             while True:
+                
                 user_password = input("Enter password: ")
                 user_confirm_password = input("Confirm password: ")
                 if user_password == user_confirm_password:

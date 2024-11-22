@@ -10,15 +10,19 @@ class UserData:
     """
 
     def __init__(self):
+
         """
         Initializes the UserData object and sets the cursor for database operations.
         """
+
         connection_object = DatabBaseconnection()
         self.connection, self.cursor = connection_object.connection()
         self.create_users_table() 
 
     def create_users_table(self):
+
         """Create the users table if it does not exist."""
+
         try:
             sql = """
             CREATE TABLE IF NOT EXISTS users (
@@ -34,7 +38,6 @@ class UserData:
             """
             self.cursor.execute(sql)
             self.connection.commit()
-            print("Table 'users' is ready.")
         
         except pymysql.MySQLError as e:
             print(f"Error: Unable to create table. {e}")
@@ -46,11 +49,12 @@ class UserData:
         
         try:
             sql = """
-            INSERT INTO users (account_number, name, email, age, address, phone_number, password, balance)
+            INSERT INTO users 
+            (account_number, name, email, age, address, phone_number, password, balance)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
             """
             self.cursor.execute(sql, (user_account_number, user_name, user_email, user_age, 
-                                       user_address, user_phone_number, user_password, user_account_balance))
+                        user_address, user_phone_number, user_password, user_account_balance))
             self.connection.commit()  
             print(f"User:{user_name} with account number:{user_account_number} created.")
         
@@ -60,12 +64,12 @@ class UserData:
             print(f"An unexpected error occurred while inserting data: {e}")
 
     def display(self):
+
         try:
             sql = "SELECT * FROM users"
             self.cursor.execute(sql)
             results = self.cursor.fetchall()
             return results 
-        
         except pymysql.MySQLError as e:
             print(f"Error: Unable to retrieve data. {e}")
             return None
@@ -74,6 +78,7 @@ class UserData:
             return None
 
     def update_balance(self, user_account_number, new_balance):
+
         try:
             sql = """
             UPDATE users
@@ -93,6 +98,8 @@ class UserData:
             print(f"An unexpected error occurred while updating balance: {e}")
 
     def close(self):
+        
         """Close the cursor and connection."""
+        
         self.cursor.close()
         self.connection.close()

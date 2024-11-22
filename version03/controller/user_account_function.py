@@ -16,6 +16,7 @@ class AccountOperation:
         """
 
         while True:
+            
             print("-------------------------------------------------------||")
             print(Fore.YELLOW+"Press 1 for debit from account: "+Style.RESET_ALL)
             print("-------------------------------------------------------||")
@@ -27,9 +28,7 @@ class AccountOperation:
             print("-------------------------------------------------------||")
             print(Fore.YELLOW+"Press any key for exit with bank account: "+Style.RESET_ALL)
             print("-------------------------------------------------------||")
-
             user_choice=int(input(Fore.BLUE+"Enter your choice: "+Style.RESET_ALL))
-        
             if user_choice==DEBIT_AMOUNT:
                 self.bank.debit_amount(user_account_number)
             elif user_choice==CREDIT_AMOUNT:
