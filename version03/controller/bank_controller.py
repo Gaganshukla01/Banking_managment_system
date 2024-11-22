@@ -1,7 +1,6 @@
 from colorama import (Fore,Style)
 from view.user_login import LoginBankAccount
 from view.user_sign_up import SignupBankAccount
-from controller.auth_controller import BankingAuth
 from constant.constant import(SIGNUP_ACCOUNT,LOGIN_ACCOUNT,BANKING)
 
 class BankController:
@@ -9,7 +8,6 @@ class BankController:
     def __init__(self):
         self.sign_up=SignupBankAccount()
         self.login=LoginBankAccount()
-        self.auth=BankingAuth()
 
     def bank_controller(self):
 
@@ -42,7 +40,7 @@ class BankController:
             if user_choice==SIGNUP_ACCOUNT:
                 self.sign_up.signup_bank_account()
             elif user_choice==LOGIN_ACCOUNT:
-                check_response,user_account_number=self.login.login_bank_account()
+                self.login.login_bank_account()
             elif user_choice==BANKING:
                 if check_response:
                     self.auth.banking_auth(user_account_number)
