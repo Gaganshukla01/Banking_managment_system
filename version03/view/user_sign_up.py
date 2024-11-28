@@ -1,3 +1,5 @@
+import maskpass
+from colorama import Fore, Style
 from model.bank_user_ import UserData
 from service.user_validation import Validation
 from service.account_number_genrate import AccountNumberGenerator
@@ -5,6 +7,7 @@ from service.account_number_genrate import AccountNumberGenerator
 class SignupBankAccount:
 
     def __init__ (self):
+        
         self.user_data = UserData()
         self.genrate=AccountNumberGenerator()
     
@@ -29,6 +32,7 @@ class SignupBankAccount:
         """
     
         try:
+            
             user_name=self.get_valid_input("Enter your name: ", Validation.name_valid)
             user_age=self.get_valid_input("Enter your age: ", Validation.age_valid)
             user_address=self.get_valid_input("Enter your address: ", Validation.address_valid)
@@ -38,7 +42,7 @@ class SignupBankAccount:
             while True:
                 
                 user_password = input("Enter password: ")
-                user_confirm_password = input("Confirm password: ")
+                user_confirm_password = maskpass.askpass("Enter your password: ",mask="*")
                 if user_password == user_confirm_password:
                     break
                 else:
@@ -50,6 +54,7 @@ class SignupBankAccount:
             print(f"Account created successfully with account number {user_account_number}")
             self.user_data.insert(user_name, user_age, user_address, user_email, user_phone_number, 
                          user_password, user_account_number,user_account_balance)
+            return True
 
         except Exception as e:
             print(f"An error occurred: {e}")

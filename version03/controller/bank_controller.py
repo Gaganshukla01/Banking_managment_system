@@ -31,9 +31,6 @@ class BankController:
             print(Fore.YELLOW+"Press 2 for login with bank account: "+Style.RESET_ALL)
             print(Fore.YELLOW+"-------------------------------------------------------||"
                         +Style.RESET_ALL)
-            print(Fore.YELLOW+"Press 3 for banking with bank account: "+Style.RESET_ALL)
-            print(Fore.YELLOW+"-------------------------------------------------------||"
-                        +Style.RESET_ALL)
             print(Fore.YELLOW+"Press any key for exit with bank account: "+Style.RESET_ALL)
             print(Fore.YELLOW+"-------------------------------------------------------||"
                         +Style.RESET_ALL)
@@ -42,12 +39,6 @@ class BankController:
                 self.sign_up.signup_bank_account()
             elif user_choice==LOGIN_ACCOUNT:
                 self.login.login_bank_account()
-            elif user_choice==BANKING:
-                if check_response:
-                    self.auth.banking_auth(user_account_number)
-                    check_response=False
-                else:
-                    print("You are not logged in yet")
             else:
                 print("Thanks for using bank system........")
                 break 

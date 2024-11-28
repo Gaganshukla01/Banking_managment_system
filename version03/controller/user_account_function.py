@@ -1,6 +1,7 @@
 from colorama import (Fore,Style)
 from view.bank_services import Operation
-from constant.constant import(DEBIT_AMOUNT,CREDIT_AMOUNT,SHOW_BALANCE,TRANSFER_MONEY)
+from constant.constant import(DEBIT_AMOUNT,CREDIT_AMOUNT,SHOW_BALANCE,
+                                TRANSFER_MONEY,SHOW_ACCOUNT,TRANSACTION_HISTORY)
 
 class AccountOperation:
 
@@ -26,6 +27,10 @@ class AccountOperation:
             print("-------------------------------------------------------||")
             print(Fore.YELLOW+"Press 4 for transfer money via account number : "+Style.RESET_ALL)
             print("-------------------------------------------------------||")
+            print(Fore.YELLOW+"Press 5 for show transaction history : "+Style.RESET_ALL)
+            print("-------------------------------------------------------||")
+            print(Fore.YELLOW+"Press 6 for show account details : "+Style.RESET_ALL)
+            print("-------------------------------------------------------||")
             print(Fore.YELLOW+"Press any key for exit with bank account: "+Style.RESET_ALL)
             print("-------------------------------------------------------||")
             user_choice=int(input(Fore.BLUE+"Enter your choice: "+Style.RESET_ALL))
@@ -37,5 +42,10 @@ class AccountOperation:
                 self.bank.show_balance(user_account_number)
             elif user_choice==TRANSFER_MONEY:
                 self.bank.transfer_money(user_account_number)
+            elif user_choice==TRANSACTION_HISTORY:
+                self.bank.transaction_history(user_account_number)
+            elif user_choice==SHOW_ACCOUNT:
+                self.bank.show_account(user_account_number)
             else:
-                break
+                return
+                
